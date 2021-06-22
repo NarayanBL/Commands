@@ -1,0 +1,68 @@
+:=> Set New MySQL Passowrd
+/usr/local/mysql/bin/mysql -u root -p
+New Passowrd for root is root
+
+:=> Terminal Commands
+a: To copy all including the hidden files and directory
+ditto src_folder dest_folder
+b: Identify the process by port number
+lsof -i:8080
+
+:=> Brew Commands
+a: The Check the version
+brew -v
+b: To check if Brew is installed.
+which brew
+c: checks if Homebrew is installed and working properly.
+brew doctor
+d: Cleans up the non working link
+brew cleanup
+e: For help
+brew help
+f: To update brew
+brew update
+g: To Install Github CLI 
+brew install gh
+
+:=> SSH Keygen
+1: Generating a new SSH key : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
+ssh-keygen -t ed25519 -C "narayan@bridgelabz.com"
+2: passphrase Ac...
+3: Check your .ssh directory that got generated
+ls -al ~/.ssh
+
+:=> Adding SSH Key to SSH Agent https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
+1: Start the ssh-agent in the background.
+eval "$(ssh-agent -s)"
+2: Open config file 
+open ~/.ssh/config
+3: If not present create a config file..
+touch ~/.ssh/config
+4: Open  ~/.ssh/config file and add host (*) Use Key Chain...
+5: Add your SSH private key to the ssh-agent and store your passphrase in the keychain. 
+ssh-add -K ~/.ssh/id_ed25519
+
+:=> SQL Commands
+1: To Clear Mysql Client screen
+Ctrl L 
+2: create a codinclub DB
+create database codinclub; 
+3: Creates a DB user https://www.mysqltutorial.org/mysql-drop-user/
+create user 'codinuser'@'%' identified by 'password'; 
+4: Gives all privileges to the new user on the newly created database @ localhost
+grant all on codinclub.* to 'codinuser'@'%'; 
+5: View all Mysql Users
+select user, host from mysql.user;
+6: Drop user codinuser
+drop user 'codinuser'@'%';
+6: Change password of codinuser to test
+ALTER USER 'codinuser'@'%' IDENTIFIED BY 'test';
+ALTER USER root@localhost IDENTIFIED BY 'root';
+
+nano -T3 ~/.bash_profile 
+export DB_EXAMPLE_USERNAME=springuser
+export DB_EXAMPLE_PASSWORD=password
+echo $DB_EXAMPLE_USERNAME # In New Terminal
+
+
+

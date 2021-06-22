@@ -1,0 +1,167 @@
+    1  pwd
+    2  ls
+    3  mkdir Test
+    4  ls
+    5  cd test
+    6  open .
+    7  cd Extras
+    8  mkdir Extras
+    9  mkdir Development
+   10  cd Extras
+   11  open .
+   12  pwd
+   13  cd ..
+   14  ls
+   15  open .
+   16  pwd
+   17  cd ../..
+   18  pwd
+   19  mkdir Development
+   20  mkdir Extras
+   21  cd Development/
+   22  pwd
+   23  open .
+   24  cd ..
+   25  cd Extras/
+   26  open .
+   27  ls -al /usr/local/*
+   28  ls -al /usr/local/ 
+   29  ruby
+   30  history
+   31  ls -al /usr/local/ 
+   32  pwd
+   33  cd Development/TerminalCommands/
+   34  ls
+   35  java Helloworld
+   36  java Helloworld &
+   37  b
+   38  java Helloworld &
+   39  job
+   40  jobs
+   41  fg %1
+   42  jobs
+   43  fg %1
+   44  bg %1
+   45  jobs
+   46  fg %1
+   47  jobs
+   48  killall java
+   49  clear
+   50  history | grep Helloworld
+   51  java Helloworld
+   52  jobs
+   53  fg %1
+   54  fg %2
+   55  jobs
+   56  fg %2
+   57  jobs
+   58  bg %2
+   59  jobs
+   60  killall java
+   61  jobs
+   62  history | grep Helloworld
+   63  java Helloworld &
+   64  jobs
+   65  fg %1
+   66  jobs
+   67  bg %1
+   68  jobs
+   69  killall java
+   70  jobs
+   71  clear
+   72  ps -elf | less
+   73  ps -elf | awk '{ print $2 }'
+   74  ps -elf | less
+   75  ls
+   76  nano Helloworld.java
+   77  javac Helloworld.java 
+   78  java Helloworld  &
+   79  ps -elf | grep java
+   80  ps -elf | grep java | grep -v grep
+   81  ps -elf | grep java | grep -v grep
+   82  ps -elf | grep java | grep -v grep | awk '{ print $2 }'
+   83  ps -elf | grep java | grep -v grep | awk '{ print $2 }')ccc
+   84  kill -9 $(ps -elf | grep java | grep -v grep | awk '{ print $2 }')
+   85  ps -elf | grep java | grep -v grep | awk '{ print $2 }'
+   86  java Helloworld  &
+   87  kill -9 `ps -elf | grep java | grep -v grep | awk '{ print $2 }'`
+   88  ps -elf | grep java | grep -v grep | awk '{ print $2 }'
+   89  java Helloworld  &
+   90  ps -elf | grep java | grep -v grep 
+   91  ps -elf | grep java | grep -v grep 
+   92  mypi=`ps -elf | grep java | grep -v grep | awk '{ print $2 }'`
+   93  mypid=`ps -elf | grep java | grep -v grep | awk '{ print $2 }'`
+   94  echo $mypid
+   95  kill -9 $mypid
+   96  clear
+   97  java Helloworld  &
+   98  ps -elf | grep java | grep -v grep | awk '{ print $14 }'
+   99  ps -elf | grep java | grep -v grep | awk '{ print $13 }'
+  100  ps -elf | grep java | grep -v grep | awk '{ print $15 }'
+  101  clear
+  102  mypid=`ps -elf | grep java | grep -v grep | awk '{ print $2 }'`
+  103  kill -9 $mypid
+  104  ps -elf | grep java | grep -v grep | awk '{ print $15 }'
+  105  clear
+  106  ls 
+  107  cd linux-content/
+  108  ls 
+  109  less data.csv 
+  110  less data.csv 
+  111  less data.csv 
+  112  less data.csv 
+  113  cleare
+  114  clear
+  115  echo Hello Tom
+  116  echo Hello Tom | awk '{ print $0 }'
+  117  echo Hello Tom | awk '{ $2 = "Adam "} { print $0 }'
+  118  less data.csv 
+  119  cat data.csv 
+  120  cat data.csv | awk 'NR > 1 { sum =+ $4 } {print $sum }'
+  121  cat data.csv | awk 'NR > 1 { sum =+ $4 } {print sum }'
+  122  cat data.csv | awk 'NR > 1 { sum =+ $4 }END {print sum }'
+  123  cat data.csv | awk 'NR > 1 { sum =+ $4 }END {print sum/NR }'
+  124  cat data.csv | grep CAPTAIN | awk 'NR > 1 { sum =+ $4 } END {print sum/NR }'
+  125  less data.csv 
+  126  clear
+  127  cat data.csv | grep CAPTAIN 
+  128  cat data.csv | grep CAPTAIN | awk $4
+  129  cat data.csv | grep CAPTAIN | awk '{$4}'
+  130  cat data.csv | grep CAPTAIN | awk '{print $4}'
+  131  cat data.csv | grep CAPTAIN | awk '{print $4}'
+  132  cat data.csv | grep CAPTAIN | awk '{ sum=+$4 }END{ print sum }'
+  133  cat data.csv | grep CAPTAIN | awk '{ sum+=$4 }END{ print sum }'
+  134  cat data.csv | grep CAPTAIN | awk '{ sum+=$4 }END{ print sum/NR }'
+  135  ps -elf
+  136  ps -elf | awk ' { print $2 }'
+  137  ps -elf
+  138  ps -elf | grep login
+  139  ps -elf | grep java
+  140  ps -elf | grep java | grep -v grep
+  141  ps -elf | grep java | grep -v grep | awk ' { print $2 }'
+  142  mypid=`ps -elf | grep java | grep -v grep | awk ' { print $2 }'`
+  143  echo $mypid
+  144  ls 
+  145  filelist=`ls` 
+  146  echo $filelist
+  147  touch sample
+  148  ls 
+  149  echo $filelist
+  150  filelist=`ls` 
+  151  echo $filelist
+  152  ls -lrt
+  153  cat access.log 
+  154  mypid=`ps -elf | grep \java | awk ' { print $2 }'`
+  155  echo $mypid
+  156  ps -elf | grep \java | awk ' { print $2 }'
+  157  ps -elf | grep \java
+  158  ps -elf | grep /java
+  159  mypid=`ps -elf | grep java | grep -v grep | awk ' { print $2 }'`
+  160  echo $mypid
+  161  kill -9 58209
+  162  mypid=`ps -elf | grep java | grep -v grep | awk ' { print $2 }'`
+  163  echo $mypid
+  164  kill -9 $mypid
+  165  history
+  166  pwd
+  167  history >> ../ps_commands.txt

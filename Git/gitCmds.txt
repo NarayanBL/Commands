@@ -1,0 +1,251 @@
+  101  git status
+  102  git commit -m "Added first name pattern checking and a happy test case to test the name"
+  103  git config --global --edit
+  104  git commit -m "Added first name pattern checking and a happy test case to test the name"
+  105  git status
+  106  git branch
+  107  git push origin master
+  108  git status
+  109  git add *
+  110  git status
+  111  git reset *
+  112  git status
+  116  git status
+  117  git add .
+  118  git status
+  120  git status
+  121  git commit -m "Test cases added to check for sad test cases where name has special characters or small"
+  122  git config --global --edit
+  123  git config --global --edit
+  124  git config --global user.name "Narayan Mahadevan"
+  125  git config --global user.email narayan@bridgelabz.com
+  126  git status
+  128  git status
+  129  git push origin master
+  130  git status
+  131  git add .
+  132  git commit -m "Test cases added when user name has special character should fail"
+  133  git push origin master
+  135  git add .
+  136  git commit -m "Added code to check for valid last name pattern and a test case to check for success" 
+  137  git push origin master
+  139  git add .
+  140  git add .
+  141  git commit -m "Test case added to check when last name is small should return false"
+  142  git push origin master
+  144  git status
+  145  git add .
+  146  git commit -m "Added code with test case to check for valid email address"
+  147  git push origin master
+  150  git status
+  151  git add .
+  152  git commit -m "Parameterized Test added to check validity of multiple correct and incorrect email ids" 
+  153  git push origin master
+  156  git status
+  157  git add .
+  158  git status
+  159  git commit -m "Added CensusAnalyser and corr. Test File to load the IndiaCansusData csv File"
+  160  git push origin master
+  162  git status
+  163  git add .
+  164  git commit -m "Refactored CensusAnalyser to throw custom excption and correspending test case when wrong data file is passed"  
+  166  git status
+  167  git push origin master
+  230  git status
+  231  git stash main/java/javashowcase/IndiaCensusCSV.java
+  232  git status
+  234  git status
+  235  git add test/java/javashowcase/CensusAnalyserTest.java
+  236  git commit -m "Refactored to specify WRONG_CSV_FILE_PATH"
+  237  git status
+  238  git add .
+  239  git commit -m "Refactored to handle wrong csv and used stream to return count"
+  240  git push origin master
+  243  git status
+  244  git add test/java/javashowcase/CensusAnalyserTest.java test/resources/IndiaStateCode.csv
+  245  git commit -m "Added Test Cases to check successfull loading of csv file for state codes"
+  246  git status
+  247  git add .
+  248  git commit -m ""Added code to load CSV State Code Data"
+  249  git commit -m "Added code to load CSV State Code Data"
+  250  git status
+  251  git push orgin master
+  252  git push origin master
+  258  git status
+  259  git add .
+  260  git commit -m "Refactor the code as DRY was violated to extract data from OpenCSV"
+  261  git push origin master
+  263  git status
+  264  git status
+  266  git status
+  267  git add .
+  268  git commit -m "Refactored Code to ensure Single Responsibility for Analyser and use Delegation Principle to handle CSV Files" 
+  269  git push origin master
+  271  git status
+  272  git add .
+  273  git status
+  274  git add .
+  275  git status
+  276  git commit -m "Refactored Code and Introduced CSV Builder and Factory to ensure Programming for Interface then Implementation" 
+  277  git push origin master
+  279  git status
+  280  git add .
+  281  git commit -m "Refactored the code to Introduce CSV Exception to ensure CSV Builder encapsulate all changes"
+  282  git push origin master
+  284  git status
+  285  git add .
+  286  git commit -m "Refactored Code to take in List of Census Data instead of Iterating through the File"
+  287  git push origin master
+  290  git status
+  291  git add .
+  292  git status
+  293  git commit -m "Added Code to Sort Census Data based on State. Also made Census List as Instance Variable"
+  294  git push origin master
+  296  history | git commit
+  297  history | grep git commit
+  303  git status
+  304  git add .
+  305  git commit -m "Refactored Code as Encapsulate What Changes was violated and used DAO pattern to solve it"
+  306  git push origin master
+  308  git status
+  309  git add .
+  310  git commit -m "Refactored Code to create a Map of State and Census Data instead of List"
+  311  git push origin master
+  313  git status
+  314  git add test/*
+  315  git status
+  316  git commit -m "Refactored Load State Code Test Case to also load State Census Data"
+  319  git status
+  320  git add .
+  321  git commit -m "Refactored Code to load State Code to Census DAO"
+  322  git push origin master
+  323  git status
+  324  git status
+  328  git clone https://github.com/NarayanBL/CensusAnalyser.git
+  330  git init
+  331  git remote add origin https://github.com/NarayanBL/CensusAnalyser.git
+  332  git config --list
+  334  git status
+  336  git status
+  339  cd .git
+  342  git pull origin master
+  344  nano .gitignore 
+  346  git status
+  347  git add
+  348  git add .
+  349  git status
+  350  git commit -m "Added Code and Test Case to Load the Census Data. This is the first commit"
+  351  git push origin master
+  353  git status
+  356  git status
+  357  git add main/*
+  358  git status
+  359  git commit -m "Refactored code to close the File"
+  360  git push origin master
+  363  git status
+  365  git status
+  366  git add test*
+  367  git status
+  368  git commit -m "Added Test Code to load the State CSV File"
+  369  git add main*
+  370  git commit -m "Added Code to load the State CSV File"
+  371  git push origin master
+  373  git status
+  374  git add main*
+  375  git commit -m "Refactored Code to handle DRY violation on CSV Build" 
+  376  git push origin master
+  378  git status
+  379  git add main*
+  380  git commit -m "Refactored Code to handle DRY Violation at the Iterator Count"
+  381  git push origin master
+  383  git status
+  384  git add main*
+  385  git commit -m "Refactored Code to handle Single Responsibility by seperating the OpenCSV Builder"
+  386  git push origin master
+  388  git status
+  389  git add main*
+  390  git commit -m "Refactored Code and Programmed CSV Builder for Interface to address Open Close Priciple"
+  391  git push origin master
+  393  git status
+  394  git add main*
+  396  git status
+  397  git commit -m "Refactored Code to encapsulate all changes with in the CSV Builder"
+  398  git push origin master
+  400  git status
+  401  git status
+  403  git status
+  404  git add main*
+  405  git status
+  406  git commit -m "Refactored Code to support List in place of Iterator"
+  407  git push origin master
+  409  git status
+  411  git status
+  412  git add test*
+  413  git commit -m "Added Test to Sort the given Census Data by State"
+  415  git status
+  416  git add main*
+  417  git commit -m "Added code to Sort the Census Data by State."
+  418  git push origin master
+  420  git status
+  421  git add main*
+  423  git status
+  424  git commit -m "Refactored Code to create a Census DAO as Encapsulatation Principle was violated"
+  425  git push origin master
+  426  git status
+  427  git checkout .
+  428  git status
+  429  git checkout -- ../build*
+  430  git checkout -- ../build/
+  431  git status
+  433  git reset HEAD~1
+  434  git log
+  435  git log
+  438  git status
+  439  git checkout .
+  440  git status
+  442  git status
+  443  git add main*
+  444  git commit -m "Refactored Code added CensusDAO object to eventually accomodate State Code"
+  445  git push origin master
+  446  git status
+  447  git pull --rebase
+  450  nano .gitignore 
+  452  less .gitignore 
+  453  git status
+  454  git checkout build/
+  455  git add .gitignore 
+  456  git commit --ammend
+  457  git commit --amend
+  459  git status
+  460  git pull --rebase
+  461  git branch --set-upstream-to=origin/<branch> master
+  462  git branch --set-upstream-to=origin/master master
+  463  git pull --rebase
+  466  git sttaus
+  467  git status
+  468  git checkout build/
+  469  git add src/
+  471  git status
+  472  git rebase --continue
+  473  git status
+  474  git push origin master
+  475  git status
+  477  git test*
+  478  git test*
+  479  git add test*
+  481  git status
+  482  git add main*
+  483  git status
+  484  git commit -m "Added Code to support state code in Census DAO Object"
+  485  git push origin master
+  487  git status
+  489  nano .gitignore 
+  490  nano .gitignore 
+  491  git status
+  492  git add .gitignore 
+  493  git commit -m "Added to ignore build from gitignore"
+  494  git push origin master
+  496  git status
+  499  git stash
+  500  git status
+  501  history | grep git >> ~/Development/Commands/gitCmds.txt

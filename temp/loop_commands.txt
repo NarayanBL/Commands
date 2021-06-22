@@ -1,0 +1,84 @@
+    1  pwd
+    2  ls
+    3  mkdir Test
+    4  ls
+    5  cd test
+    6  open .
+    7  cd Extras
+    8  mkdir Extras
+    9  mkdir Development
+   10  cd Extras
+   11  open .
+   12  pwd
+   13  cd ..
+   14  ls
+   15  open .
+   16  pwd
+   17  cd ../..
+   18  pwd
+   19  mkdir Development
+   20  mkdir Extras
+   21  cd Development/
+   22  pwd
+   23  open .
+   24  cd ..
+   25  cd Extras/
+   26  open .
+   27  ls -al /usr/local/*
+   28  ls -al /usr/local/ 
+   29  ruby
+   30  history
+   31  ls -al /usr/local/ 
+   32  ps -elf | grep bg
+   33  ps -elf | grep /java
+   34  kill -9 57423
+   35  bg --help
+   36  man bg
+   37  fg %1
+   38  fg %2
+   39   ps -elf
+   40  ls -lrt
+   41  cd Development/
+   42  ls
+   43  ls -lrt
+   44  cd TerminalCommands/
+   45  ls
+   46  java Helloworld
+   47  java Helloworld &
+   48  for files in `ls *.txt` do echo $ files; done
+   49  for files in `ls *.txt` do echo $files; done
+   50  for files in `ls *.txt`; do echo $files; done
+   51  touch abc.txt
+   52  touch def.txt
+   53  for files in `ls *.txt`; do echo $files; done
+   54  for files in `ls *.txt | awk -F. '{print $1}'`; do echo $files; done
+   55  for files in `ls *.txt`; do $files | awk -F. '{print $1}'; done
+   56  for files in `ls *.txt`; do echo $files | awk -F. '{print $1}'; done
+   57  for files in `ls *.txt | awk -F. '{print $1}'`; do echo $files; done
+   58  for files in `ls *.txt`; do folderName = `$files | awk -F. '{print $1}'`; echo $folderName done; for files in `ls *.txt`; do folderName = `$files | awk -F. '{print $1}'`; echo $folderName; done
+   59  for files in `ls *.txt`; do folderName = `echo $files | awk -F. '{print $1}'`; echo $folderName; done
+   60  for files in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`; echo $folderName; done
+   61  for files in `ls *.txt | awk -F. '{print $1}'`; do echo $files; done
+   62  for files in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`; echo $folderName; done
+   63  for files in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`; echo $folderName;  mkdir $folderName; done
+   64  ls
+   65  ls -p
+   66  rm -R abc def
+   67  ls
+   68  for files in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`; mkdir $folderName; rm -R $folderName; done
+   69  for files in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`;  mkdir $folderName; mv $files $folderName; done
+   70  ls -p
+   71  ls -p abc
+   72  rm -R abc def
+   73  touch abc.txt def.txt
+   74  ls -p
+   75  for files in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`;   mkdir $folderName; mv $files $folderName; rm -R $folderName; touch $files; done
+   76  for files in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`;  if [ -d $folderName ];  then  rm -R $folderName; touch $fileName; fi; mkdir $folderName; mv $files $folderName
+   77  for file in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`;  if [ -d $folderName ];  then rm -R $folderName; fi; mkdir $folderName; mv $files $folderName; ;
+   78  for file in `ls *.txt`; do folderName=`echo $files | awk -F. '{print $1}'`; if [ -d $folderName ];  then rm -R $folderName; fi; mkdir $folderName;
+   79  for file in `ls *.txt`; do folderName=`echo $file | awk -F. '{print $1}'`; if [ -d $folderName ];  then rm -R $folderName; fi; mkdir $folderName; cp $file $folderName; done
+   80  ls -p
+   81  for file in `ls *.txt`; do folderName=`echo $file | awk -F. '{print $1}'`; if [ -d $folderName ];  then rm -R $folderName; fi; mkdir $folderName; cp $file $folderName; done
+   82  clear
+   83  history
+   84  history >> loop_commands.txt

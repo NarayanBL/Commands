@@ -1,0 +1,95 @@
+Commands.txt
+:=> To see the process running on 8080 port
+lsof -i :8080
+
+:=> Github CLI -: https://cli.github.com/manual/
+1. To Install :- 
+
+:=> Shows who created the branch
+
+git for-each-ref --format='%(authorname) %09 -%(refname)' | sort 
+
+:=> WF Steps
+
+1. git init 						=> Create new Repo
+2. git clone <<path>> 				=> Create Local Repo from Remote Repo
+3. git add filename or . 			=> Add Modified files to Index
+4. git commit -m "Commit message"	=> Commit Changes with a proper message to Head
+5. git push origin master			=> Push the changes to Remote Repo
+6. git remote add origin <server>	=> Alterbate to clone and add remore Repo
+7. gitk 							=> Commit Viewer for Git
+8. git config color.ui true			=> use colorful git output
+9. git config format.pretty oneline => show log on just one line per commit
+10. git stash 						=> Remove Modified Files
+11. git fetch 						=> fetch all braches
+
+
+:=> Branching
+
+1. git branch 						=> Show the current branch 
+2. git branch -a 					=> Show all the branches 
+3. git checkout -b feature_x		=> Create a new branch named and switch to it
+4. git checkout master				=> Switch back to master
+5. git branch -d feature_x			=> Delete the branch 
+6. git push origin <branch>			=> Push branch to Remote Repo to make it available to others
+7. git status 						=> To see the list of files modified
+8. git branch -m <oldname> <newname> => rename brache
+
+:=> Update and Merge
+
+1. git pull							=> Update local repository to the newest commit. Will fetch & merge Remote Changes
+2. git merge <branch>				=> To merge another branch into active branch. Merge Conflicts and add files after resolving the conflicts
+3. git pull origin master_dev		=> Getting the latest updates from master_dev branch
+4. git merge --abort				=> Abort a bad merge
+
+:=> Before merging changes, you can also preview them by using
+
+git diff <source_branch> <target_branch>
+
+
+=> Typical process to merge the master with the new branch and finally merge the branch with the master...
+
+  1. git checkout feature_search		=> checkout feature_search Branch
+  2. git merge master_dev				=> Merge with master_dev branch
+  3. git status 						=> Checking the status to see the changes files
+  4. git push origin feature_search 	=> Pushing the changes to the remote repo
+  5. git checkout master_dev			=> checkout master_dev Branch
+  6. git merge feature_search			=> Merging with feature_search branch
+  7. git status 						=> Checking the status to see the changes files
+  8. git push origin master_dev			=> Pushing the changes to the remote repo
+  9. git config --global user.name "NarayanBL"
+  10. git config --global user.email "email@example.com"
+  11. git mv old_filename new_filename => Rename the file,
+
+
+:=> Tagging :- 	It's recommended to create tags for software releases. You can create a new tag named 1.0.0 by executing below cmd. 
+				The 1b2e1d63ff stands for the first 10 characters of the commit id you want to reference with your tag..
+
+git tag 1.0.0 1b2e1d63ff
+
+
+:=> Log
+
+1. git log --author=bob				=> To see only the commits of a certain author
+2. git log --pretty=oneline			=> To see a very compressed log where each commit is one line
+3. git log --name-status			=> See only which files have changed
+4. git log --help					=> Get more help
+
+:=> To see an ASCII art tree of all the branches, decorated with the names of tags and branches:
+
+git log --graph --oneline --decorate --all 
+
+
+:=> Replace local changes using this command. Replaces the last changes with one in the HEAD
+
+git checkout -- <filename>
+
+:=> If you instead want to drop all your local changes and commits, fetch the latest history from the server and point your 
+	local master branch at it like this
+
+git fetch origin
+
+git reset --hard origin/master
+
+
+
