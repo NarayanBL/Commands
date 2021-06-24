@@ -1,0 +1,37 @@
+// Working REST Call with JSON Server
+curl -X GET -H "Content-Type: application/json"  "http://127.0.0.1:3000/EmployeePayrollDB/" -w "\n"
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Mark Taylor","gender": "male","department": ["HR","Sales"], "salary": "500000", "startDate": "29 Oct 2019","note": "All In One","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://127.0.0.1:3000/EmployeePayrollDB/"  -w "\n"
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Mark Taylor","gender": "male","department": ["Sales"], "salary": "500000", "startDate": "29 Oct 2019","note": "All In One.. Terrific","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://127.0.0.1:3000/EmployeePayrollDB/4"  -w "\n"
+curl -X GET -H "Content-Type: application/json"  "http://127.0.0.1:3000/EmployeePayrollDB/4" -w "\n"
+curl -X DELETE -H "Content-Type: application/json"  "http://127.0.0.1:3000/EmployeePayrollDB/4" -w "\n"
+
+
+// Working REST Call
+curl localhost:8080/employeepayrollservice/ -w "\n"
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Jimmy Carter","gender": "male","department": ["HR","Sales"], "salary": "500000", "startDate": "29 Oct 2019","note": "All In One","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://localhost:8080/employeepayrollservice"  -w "\n"
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Jimmy Carter","gender": "male","department": ["HR"], "salary": "500000", "startDate": "29 Oct 2019","note": "All In One.. Terrific","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://localhost:8080/employeepayrollservice/3"  -w "\n"
+curl localhost:8080/employeepayrollservice/3 -w "\n"
+curl -X DELETE localhost:8080/employeepayrollservice/3 -w "\n"
+curl localhost:8080/employeepayrollservice/department/Sales -w "\n"
+
+// Error OLD REST Call
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Mark Taylor","gender": "M","department": ["HR","Sales"], "salary": "200", "startDate": "29 Dec 2020","note": "All In One","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://localhost:8080/employeepayrollservice/"  -w "\n"
+
+
+// OLD Working REST Call
+curl localhost:8080/employeepayrollservice/ -w "\n"
+curl localhost:8080/employeepayrollservice/get/1 -w "\n"
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Jeff Taylor","gender": "male","departments": ["HR","Sales"], "salary": "500000", "startDate": "29 Oct 2019","note": "All In One","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://localhost:8080/employeepayrollservice/create"  -w "\n"
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Jeff Taylor","gender": "male","departments": ["HR"], "salary": "500000", "startDate": "29 Oct 2019","note": "All In One.. Terrific","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://localhost:8080/employeepayrollservice/update/5"  -w "\n"
+curl -X DELETE localhost:8080/employeepayrollservice/delete/4 -w "\n"
+
+// Error OLD REST Call
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Mark Taylor","gender": "M","department": ["HR","Sales"], "salary": "200", "startDate": "29 Dec 2020","note": "All In One","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://localhost:8080/employeepayrollservice/create"  -w "\n"
+
+// Very Old REST API 
+// Employee Payroll Project
+curl localhost:8080/employeepayrollservice/ -w "\n"
+curl localhost:8080/employeepayrollservice/get/1 -w "\n"
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Lisa","salary": 3000}' "http://localhost:8080/employeepayrollservice/create"  -w "\n"
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Lisa","salary": 2000}' "http://localhost:8080/employeepayrollservice/update/1"  -w "\n"
+curl -X DELETE localhost:8080/employeepayrollservice/delete/1 -w "\n"
