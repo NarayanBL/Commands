@@ -1,0 +1,4 @@
+- To retrieve all keys - KEYS *
+- To get type of the Key - type key
+- FLUSHALL - To flush all data
+- HGETALL Key - This are the ones listed by KEYS *
