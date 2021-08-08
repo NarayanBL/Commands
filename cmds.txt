@@ -7,6 +7,10 @@ a: To copy all including the hidden files and directory
 ditto src_folder dest_folder
 b: Identify the process by port number
 lsof -i:8080
+- To delete all Files and Dir - rm -rf <<Folder Name>>
+- How to do Math in Command Lines (https://www.networkworld.com/article/3268964/how-to-do-math-on-the-linux-command-line.html)
+    -  e.g. expr 11 + 123 or expr 11 \* 123
+- 
 
 :=> Brew Commands
 a: The Check the version

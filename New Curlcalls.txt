@@ -5,6 +5,14 @@ curl -X PUT -H "Content-Type: application/json" -d '{"name": "Mark Taylor","gend
 curl -X GET -H "Content-Type: application/json"  "http://127.0.0.1:3000/EmployeePayrollDB/4" -w "\n"
 curl -X DELETE -H "Content-Type: application/json"  "http://127.0.0.1:3000/EmployeePayrollDB/4" -w "\n"
 
+curl -X POST -H "Content-Type: application/json" \
+-d '{"username": "javainuse", "password": "password"}' \
+'http://localhost:8080/authenticate' -w "\n"
+
+curl --location --request POST 'http://localhost:8080/authenticate' \
+--header 'Content-Type: application/json' \
+--form 'username="javainuse"' \
+--form 'password="password"'
 
 // Working REST Call
 curl localhost:8080/employeepayrollservice/ -w "\n"

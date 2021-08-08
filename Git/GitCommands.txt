@@ -34,6 +34,11 @@ git for-each-ref --format='%(authorname) %09 -%(refname)' | sort
 6. git push origin <branch>			=> Push branch to Remote Repo to make it available to others
 7. git status 						=> To see the list of files modified
 8. git branch -m <oldname> <newname> => rename brache
+9. Deleting Branch Steps - (https://i.stack.imgur.com/AKWYx.jpg)
+  a. git push origin --delete <<branch_name>> - To Delete at Origin
+  b. git branch -D <<branch_name>> - To Delete Locally essentially statnds for --delete --force
+10. Duplicating a repository (https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/duplicating-a-repository)
+11. git branch -d -r origin/feature/admin-services => To prune the remote branch locally
 
 :=> Update and Merge
 
