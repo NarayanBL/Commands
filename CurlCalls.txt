@@ -4,6 +4,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"name": "Mark Taylor","gen
 curl -X PUT -H "Content-Type: application/json" -d '{"name": "Mark Taylor","gender": "male","department": ["Sales"], "salary": "500000", "startDate": "29 Oct 2019","note": "All In One.. Terrific","profilePic": "../assets/profile-images/Ellipse -3.png"}' "http://127.0.0.1:3000/EmployeePayrollDB/4"  -w "\n"
 curl -X GET -H "Content-Type: application/json"  "http://127.0.0.1:3000/EmployeePayrollDB/4" -w "\n"
 curl -X DELETE -H "Content-Type: application/json"  "http://127.0.0.1:3000/EmployeePayrollDB/4" -w "\n"
+curl localhost:8080/hello/query?name=Roger -w "\n"
 
 curl -X POST -H "Content-Type: application/json" \
 -d '{"username": "javainuse", "password": "password"}' \
