@@ -102,5 +102,6 @@ term
 ### Task List
 
 - [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [ ] [Update the New website](#Extended-Syntax)
+- [ ] [Update the website](#heading-id)
+- [ ] [Contact the media]({#custom-id})
