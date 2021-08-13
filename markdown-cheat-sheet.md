@@ -2,6 +2,7 @@
 # Markdown Cheat Sheet
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
+Also check [GIT LAB Markdown Guide](https://about.gitlab.com/handbook/markdown-guide/)!
 
 This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax) and [extended syntax](https://www.markdownguide.org/extended-syntax).
 
@@ -88,7 +89,7 @@ Here's a sentence with a footnote. [^1]
 
 ### Heading ID
 
-### My Great Heading (#custom-id)
+### My Great Heading {custom-id}
 
 ### Definition List
 
