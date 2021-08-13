@@ -32,6 +32,8 @@ These are the elements outlined in John Gruber’s original design document. All
 
 > blockquote
 
+## Help conserve habitat for pollinators {: #conserve-habitat }
+
 ### Ordered List
 
 1. First item
@@ -107,5 +109,5 @@ term
 - [ ] [Unordered List](#unordered-list)
 - [ ] [Ordered List](#Ordered-List)
 - [ ] [Update the website](#heading-id)
-- [ ] [Contact the media](#custom-id)
+- [ ] [Contact the media](#conserve-habitat)
 - [ ] [Fenced Code Block](#1)
