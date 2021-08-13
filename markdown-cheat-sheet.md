@@ -92,7 +92,7 @@ Here's a sentence with a footnote. [^1]
 
 ### Heading ID
 
-### My Great Heading {: #custom-id }
+### My Great Heading {:custom-id}
 
 ### Definition List
 
@@ -111,4 +111,4 @@ term
 - [ ] [Ordered List](#Ordered-List)
 - [ ] [Update the website](#heading-id)
 - [ ] [Contact the media](#conserve-habitat)
-- [ ] [Fenced Code Block](#1)
+- [ ] [Fenced Code Block](#custom-id)
