@@ -104,8 +104,8 @@ term
 
 - [x] Write the press release
 - [ ] **[Update the New website](#Extended-Syntax)**
-- [ ] [Unordered List](#2Ordered-List)
-- [ ] [Ordered List](#)
+- [ ] [Unordered List](#2)
+- [ ] [Ordered List](#Ordered-List)
 - [ ] [Update the website](#heading-id)
 - [ ] [Contact the media](#custom-id)
 - [ ] [Fenced Code Block](#1)
