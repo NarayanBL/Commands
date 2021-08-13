@@ -89,7 +89,7 @@ Here's a sentence with a footnote. [^1]
 
 ### Heading ID
 
-### My Great Heading {: id="#custom-id" }
+### My Great Heading
 
 ### Definition List
 
@@ -105,4 +105,4 @@ term
 - [x] Write the press release
 - [ ] [Update the New website](#Extended-Syntax)
 - [ ] [Update the website](#heading-id)
-- [ ] [Contact the media]({#custom-id})
+- [ ] [Contact the media]({#My-Great-Heading})
