@@ -2,3 +2,9 @@
 - To get type of the Key - type key
 - FLUSHALL - To flush all data
 - HGETALL Key - This are the ones listed by KEYS *
+- Push and Pop from the List as in FIFO using rpop: 
+    LPUSH mylist "world" 
+    LPUSH mylist "world"
+    LRANGE mylist 0 -1
+    rpop mylist
+    LRANGE Generic 0 -1
