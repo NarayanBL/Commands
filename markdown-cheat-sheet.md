@@ -38,7 +38,7 @@ These are the elements outlined in John Gruber’s original design document. All
 2. Second item
 3. Third item
 
-### Unordered List
+### Unordered List {: #2 }
 
 - First item
 - Second item
@@ -104,6 +104,8 @@ term
 
 - [x] Write the press release
 - [ ] **[Update the New website](#Extended-Syntax)**
+- [ ] [Unordered List](#2Ordered-List)
+- [ ] [Ordered List](#)
 - [ ] [Update the website](#heading-id)
 - [ ] [Contact the media](#custom-id)
 - [ ] [Fenced Code Block](#1)
