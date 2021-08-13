@@ -32,7 +32,8 @@ These are the elements outlined in John Gruber’s original design document. All
 
 > blockquote
 
-## Help conserve habitat for pollinators {: id='conserve-habitat' }
+## Help conserve habitat for pollinators 
+{: id='conserve-habitat' }
 
 ### Ordered List
 
