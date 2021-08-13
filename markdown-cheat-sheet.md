@@ -71,7 +71,7 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 | Header | Title |
 | Paragraph | Text |
 
-### Fenced Code Block
+### Fenced Code Block {: #1 }
 
 ```
 {
@@ -106,3 +106,4 @@ term
 - [ ] [Update the New website](#Extended-Syntax)
 - [ ] [Update the website](#heading-id)
 - [ ] [Contact the media](#custom-id)
+- [ ] [Fenced Code Block](#1)
